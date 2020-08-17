@@ -8,21 +8,26 @@
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
-<body>
+<body onload="onLoad()">
 
   <h1 id="title">Drum 🥁 Kit</h1>
+  <form onsubmit="recordDetails()">
+    <h5>Name: <input type="text"> Age: <input type="number"></h5>
+    <input type="submit" value="Submit">
+  </form>
+
   <div class="set">
-    <button class="w drum">w</button>
-    <button class="a drum">a</button>
-    <button class="s drum">s</button>
-    <button class="d drum">d</button>
-    <button class="j drum">j</button>
-    <button class="k drum">k</button>
-    <button class="l drum">l</button>
+    <button class="w drum" onmouseover="changeBorder(this)" onmouseout="resetBorder(this)">w</button>
+    <button class="a drum" onmouseover="changeBorder(this)" onmouseout="resetBorder(this)">a</button>
+    <button class="s drum" onmouseover="changeBorder(this)" onmouseout="resetBorder(this)">s</button>
+    <button class="d drum" onmouseover="changeBorder(this)" onmouseout="resetBorder(this)">d</button>
+    <button class="j drum" onmouseover="changeBorder(this)" onmouseout="resetBorder(this)">j</button>
+    <button class="k drum" onmouseover="changeBorder(this)" onmouseout="resetBorder(this)">k</button>
+    <button class="l drum" onmouseover="changeBorder(this)" onmouseout="resetBorder(this)">l</button>
   </div>
 
 
-  
+
   <script src="index.js" charset="utf-8"></script>
 </body>
 
