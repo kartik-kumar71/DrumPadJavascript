@@ -1,6 +1,22 @@
 document.querySelectorAll("button").forEach(x =>x.addEventListener("click",handleClick));
 document.addEventListener("keypress",play)
 
+function onLoad() {
+    alert('Welcome to DrumPad!');
+}
+
+function recordDetails() {
+    alert('Your details have been recorded!');
+}
+
+function changeBorder(x) {
+    x.style.border = "10px solid red";
+}
+
+function resetBorder(x) {
+    x.style.border = "10px solid #404B69";
+}
+
 function handleClick() {
     var buttonName = this.innerHTML;
     switch (buttonName) {
